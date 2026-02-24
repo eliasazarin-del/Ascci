@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MFMTY. | The Elite Performance Blueprint</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts - Using Roboto Condensed & Montserrat as aggressive sans-serif alternatives -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&amp;family=Roboto+Condensed:ital,wght@0,700;1,700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#E2F13E', // The neon yellow/lime color from the image
+            dark: '#050505',
+            surface: '#121212'
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Roboto Condensed', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-typography">
+    .slant-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-style: italic;
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+    }
+    .ticker-text {
+      white-space: nowrap;
+      animation: ticker 30s linear infinite;
+    }
+    @keyframes ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+<style data-purpose="layout-styling">.hero-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(5, 5, 5, 1) 100%)
+    }
+.video-container {
+    aspect-ratio: 16/9;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuC8WDEAaiFbJUEC33Qlz65jGyoMiYZpj8pHxqzf1uA3p9kzIAbh9w81bK6x6PtwMVdpEQsStJESC3S0dhqw0GQ6iQZA0K-iGe3vctuB9SLJHMOViYdaSQA4wQnAVu1ds6HxczSuRVzvQRkrYyWCez_W4cIxVfdZRz33icPIQyulctVeehPT1DqEjTAUJpBxiCJd_zi1-Ga7E2ZYkgTxKrEjf7mc2UniyQ9c9CP1uKJnWML-KOwfXE3S8UX2HCfYj2JefjHFycUlXdV9);
+    background-size: cover;
+    background-position: center
+    }
+.card-zoom:hover img {
+    transform: scale(1.05)
+    }
+.perspective-text {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5)
+    }</style>
+</head>
+<body class="bg-dark text-white font-body selection:bg-brand selection:text-black">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="text-2xl slant-heading tracking-tighter">
+        MFMTY<span class="text-brand">.</span>
+</div>
+<div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+<a class="hover:text-brand transition" href="#">Home</a>
+<a class="hover:text-brand transition" href="#">The Message</a>
+<a class="hover:text-brand transition" href="#">Motivation</a>
+<a class="hover:text-brand transition" href="#">Insights</a>
+</div>
+<a class="bg-brand text-black px-6 py-2 text-xs font-black uppercase slant-heading hover:bg-white transition" href="#">
+        Join the Elite
+      </a>
+</nav>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+<!-- Background Image - High contrast athlete with fog -->
+<div class="absolute inset-0 z-0">
+<img alt="Elite Athlete" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQBwZqRXa0Iuto_ji_WMtsygZi9PgFFfCVg9ZRJ2WyFzGwCNNtpVzWD1vF-msnxYzeidHR9ecXs9nOwu8A-npSg-nc_dPfGflHyLH5u4H8XQN7FJ-MVOgDL5ki6AnQKl6-doNQhBpKELbL6uurA_3iqe35oh1qJeKEQS1liMjKi8Ywx5iDawqhJI2tS1VrI92Q5Wmm8BOi_aV5ACqkpKMbtYpP0Oj-GST7ON9Tw0dK2DDrrPYTt-i0oLulro_QhaFBAe4UMfFmiTNd"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+<h1 class="slant-heading text-5xl md:text-8xl lg:text-9xl leading-none mb-4">
+          My Free<br/>
+<span class="text-brand">Message</span><br/>
+          To You
+        </h1>
+<p class="text-lg md:text-xl uppercase tracking-[0.3em] font-light text-gray-300 mb-10 italic">
+          The Elite Performance Blueprint for the Modern Influencer.
+        </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-8">
+<button class="bg-brand text-black px-10 py-4 text-sm font-black uppercase slant-heading hover:scale-105 transition-transform">
+            Watch Now
+          </button>
+<a class="text-[10px] uppercase tracking-widest font-bold flex items-center gap-2 group" href="#philosophy">
+            Scroll to Ascend 
+            <span class="text-brand group-hover:translate-y-1 transition-transform">↓</span>
+</a>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: TickerBar -->
+<section class="bg-brand py-4 overflow-hidden border-y border-black/10">
+<div class="flex ticker-text">
+<div class="flex items-center space-x-12 px-6 text-black slant-heading text-2xl md:text-4xl">
+<span>Performance</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+<span>Push the Limit</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+<span>Grit &amp; Glory</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+<span>No Excuses</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+</div>
+<!-- Duplicate for seamless loop -->
+<div class="flex items-center space-x-12 px-6 text-black slant-heading text-2xl md:text-4xl">
+<span>Performance</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+<span>Push the Limit</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+<span>Grit &amp; Glory</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+<span>No Excuses</span> <span class="w-3 h-3 bg-black rounded-full"></span>
+</div>
+</div>
+</section>
+<!-- END: TickerBar -->
+<!-- BEGIN: PhilosophySection -->
+<section class="py-24 bg-dark" id="philosophy">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="slant-heading text-4xl md:text-6xl inline-block relative">
+            The Core <span class="border-b-4 border-brand">Philosophy</span>
+</h2>
+</div>
+<!-- Video Placeholder Container -->
+<div class="max-w-5xl mx-auto relative rounded-xl overflow-hidden shadow-2xl shadow-brand/10 group cursor-pointer">
+<div class="video-container flex items-center justify-center">
+<div class="w-20 h-20 bg-brand rounded-full flex items-center justify-center pl-1 group-hover:scale-110 transition-transform">
+<svg class="w-10 h-10 text-black fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"></path></svg>
+</div>
+<!-- Video Info Overlay -->
+<div class="absolute bottom-0 left-0 p-8 bg-gradient-to-t from-black/80 to-transparent w-full">
+<span class="text-brand text-[10px] font-bold uppercase tracking-widest">Now Playing</span>
+<h3 class="slant-heading text-xl md:text-2xl">Breaking The Plateau (2024)</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PhilosophySection -->
+<!-- BEGIN: FeaturedGrid -->
+<section class="py-20 bg-dark">
+<div class="container mx-auto px-6 grid md:grid-cols-12 gap-8">
+<!-- Feature 1 -->
+<div class="md:col-span-7 relative h-[500px] overflow-hidden group">
+<img alt="Training Image" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRofuUHwAE3Btt6evyA3qsE0Ehx6LDckfI9Cr86Voq78i0Uxqm6kJdP9eYTOhDxw5ggAYtj7ESRQf0ikjBJV4Zx8WYiv_SlAaO2YvGQc55eRMC0SgET8O22Vmhx3QmwwNBFYu2wozZVbOI1HjujbQGZK-IRFGdB0XK0nuJmUoGYlx03j30EhR9mppg3qnEmMswWWb6NevTQYn7LEi7b1Fg2-5Pv0OY1nR7aQs8aq078nE4fj07xBZ3Fcb2RNxQjsiDgeDf5ku6Ol52"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-10">
+<span class="bg-brand text-black px-2 py-1 text-[10px] font-bold uppercase mb-4 inline-block">Focus</span>
+<h3 class="slant-heading text-3xl md:text-5xl">The High Contrast Grind</h3>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="md:col-span-5 flex flex-col gap-8">
+<div class="h-[300px] bg-surface relative overflow-hidden group">
+<img alt="Gym Equipment" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYVZshQk9CZaU-J6AbQi8_Dp0sBwcBquUUAQyNnsz8SUKgYBzJsNN4LlAZdDPS1aro1fQXW3HicZgfaWG0-5oZUktEpjB3dUyPf2ZBKN-ly7AursuF1kgv3C34U4eS_I1CBg-tunYpgXpviikMimrWBZztaLwmTdSTVkqy1xIq0snSIk7dQLBxVQwWY6QgOsxOzCqWE1NEJYv12EHHRXA0Tm9ohXjwhvV8NDeZST_vuTkNAmK7FHqMY-Y0TNOkU5PlHMYOXNinqmvJ"/>
+</div>
+<div class="p-8 border-l-2 border-brand bg-surface/50">
+<h3 class="slant-heading text-2xl md:text-3xl mb-4">Beyond The Physical</h3>
+<p class="text-gray-400 italic text-sm leading-relaxed">
+              "It's not about the iron. It's about the resolve to pick it up when everything tells you to stay down."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: FeaturedGrid -->
+<!-- BEGIN: TheIntelSection -->
+<section class="py-24 bg-dark border-t border-white/5">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+<span class="text-brand text-[10px] font-bold uppercase tracking-[0.5em] block mb-4">Elite Resources</span>
+<h2 class="slant-heading text-5xl md:text-7xl">The Intel</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Post Card 1 -->
+<article class="bg-surface group cursor-pointer border border-white/5 hover:border-brand/30 transition-colors">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5fRkKixT5KFA6byuCr6soRtcc3i9utuX2zZN8X6EGF37S5STb-n_Yzxz1cug9Pja3Kmi2BRX5tE9ea21Z4PMQ5Ovrz-EqWbNBAutZ8on8AWc7nOERnYR5IvKqAbp4oAjAHGXLFBTEeAw7OSoBHUco_ZsJsmNPyJ_fpZf21usTCB2Q4PrV_7IjYpYiVgGYURLiFhzzs8k9_FwNoaCVi8HO4L39ORTkcRVuHvJtMRqqLtYKircxiqRxy0TsgS5uhg3T-AMdYAj-bCvD"/>
+<span class="absolute top-4 left-4 bg-black/80 text-[8px] font-bold uppercase tracking-widest px-2 py-1 border border-brand/50">Technique</span>
+</div>
+<div class="p-8">
+<h4 class="slant-heading text-2xl mb-4 group-hover:text-brand transition-colors">Training Hacks</h4>
+<p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                Optimization strategies for maximum hypertrophy and CNS recovery. Scientifically backed, battle-tested.
+              </p>
+<a class="text-[10px] font-bold uppercase tracking-widest text-brand flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                Read Intel <span>→</span>
+</a>
+</div>
+</article>
+<!-- Post Card 2 -->
+<article class="bg-surface group cursor-pointer border border-white/5 hover:border-brand/30 transition-colors">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2ZEwjArHGgZPoB3YNdnc5OcdhfqLt70ofLe8fta10CJ7Sk0scXjY-hMjZJDhXMCD7wFRo0EwMgaTS4MubKjCD3bB73SHGfPJsGX3eu7jTA5pPhBfZ6DO36AHhFFoXh6I277u3M1aLRppVeZjmrYLHjqtA30JrUlH_buQ9V6KEG3audmX5KVo5bfmnFmexXKhgPgu-v4M2ctTIwu45EebLyPtoPSZ0CYz4Fvb9K1B1GW-fhSGft5omohBpl_PcUsMKIDlZHiQIAgbg"/>
+<span class="absolute top-4 left-4 bg-black/80 text-[8px] font-bold uppercase tracking-widest px-2 py-1 border border-brand/50">Brand</span>
+</div>
+<div class="p-8">
+<h4 class="slant-heading text-2xl mb-4 group-hover:text-brand transition-colors">Influencer Insights</h4>
+<p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                The business of aesthetics. How to leverage high-performance visuals to scale your personal message.
+              </p>
+<a class="text-[10px] font-bold uppercase tracking-widest text-brand flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                Read Intel <span>→</span>
+</a>
+</div>
+</article>
+<!-- Post Card 3 -->
+<article class="bg-surface group cursor-pointer border border-white/5 hover:border-brand/30 transition-colors">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2xeNQIKQbYyszo5xUlWFP_dGTVKaXnPIc-N6WQSjg-9XDKf76pojqq6ds-7TpoqCMqSCehXyPwwwM8NlaGPuzgFbfa_NbY1Ub0-FqfXiHea-BufaMAXANHHIdM-kfMD9ZF7IRdK-usCk8gtXXhkoYUKaGiZmHFbIcTPya_6MHwWXvV5LbklqXQ52ZQPRZNa-xv6yQW_Pq9EqCH92ADSMU9eAbZF64xpkgmqZr3PDI0LKTWtZyxy_goTaJysJwLHHfv8V2SmMwdubc"/>
+<span class="absolute top-4 left-4 bg-black/80 text-[8px] font-bold uppercase tracking-widest px-2 py-1 border border-brand/50">Mindset</span>
+</div>
+<div class="p-8">
+<h4 class="slant-heading text-2xl mb-4 group-hover:text-brand transition-colors">Mental Grit</h4>
+<p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                Developing the psychological armor required to endure the fog of high-performance living.
+              </p>
+<a class="text-[10px] font-bold uppercase tracking-widest text-brand flex items-center gap-2 group-hover:gap-4 transition-all" href="#">
+                Read Intel <span>→</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- END: TheIntelSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<footer class="bg-black py-12 border-t border-white/10">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
+<div>
+<div class="text-3xl slant-heading tracking-tighter mb-2">MFMTY<span class="text-brand">.</span></div>
+<p class="text-[10px] text-gray-600 uppercase tracking-widest">© 2024 Performance Media Lab. All Rights Reserved.</p>
+</div>
+<div class="flex items-center gap-6">
+<a class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-[10px] font-bold hover:bg-white hover:text-black transition" href="#">IG</a>
+<a class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-[10px] font-bold hover:bg-white hover:text-black transition" href="#">YT</a>
+<a class="w-10 h-10 border border-white/10 rounded-full flex items-center justify-center text-[10px] font-bold hover:bg-white hover:text-black transition" href="#">X</a>
+</div>
+<div class="text-right">
+<div class="flex items-center gap-2 text-[10px] font-bold tracking-[0.2em] uppercase">
+<span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+            System Operational
+          </div>
+<p class="text-[8px] text-gray-700 uppercase mt-1">Status</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>
