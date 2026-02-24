@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Free Message To You | Elite Gym Motivation</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter and Montserrat -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;family=Montserrat:wght@900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#f5f53d',
+            charcoal: '#121212',
+            grit: '#1a1a1a',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          },
+          animation: {
+            'marquee': 'marquee 25s linear infinite',
+            'fade-in': 'fadeIn 1s ease-out forwards',
+            'float': 'float 6s ease-in-out infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-100%)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-layout">
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* Fog Overlay Texture */
+    .fog-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+      opacity: 0.2;
+      pointer-events: none;
+    }
+
+    .glass-card {
+      background: rgba(26, 26, 26, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(245, 245, 61, 0.1);
+    }
+
+    .text-stroke {
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+      color: transparent;
+    }
+
+    .neon-glow:hover {
+      box-shadow: 0 0 20px rgba(245, 245, 61, 0.4);
+    }
+
+    /* Custom horizontal scroll container for kinetic marquee */
+    .marquee-container {
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      user-select: none;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+<!-- BEGIN: Navigation -->
+<nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-black/50 backdrop-blur-md border-b border-white/10" data-purpose="main-nav">
+<div class="text-brand font-black text-2xl tracking-tighter italic">MFMTY.</div>
+<div class="hidden md:flex space-x-8 font-bold text-xs uppercase tracking-widest">
+<a class="hover:text-brand transition-colors" href="#hero">Home</a>
+<a class="hover:text-brand transition-colors" href="#video">The Message</a>
+<a class="hover:text-brand transition-colors" href="#motivation">Motivation</a>
+<a class="hover:text-brand transition-colors" href="#blog">Insights</a>
+</div>
+<button class="bg-brand text-black font-black px-6 py-2 rounded-lg text-xs uppercase hover:scale-105 transition-transform">
+      Join The Elite
+    </button>
+</nav>
+<!-- END: Navigation -->
+<!-- BEGIN: Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden" data-purpose="hero-section" id="hero">
+<!-- Background Image with Fog -->
+<div class="absolute inset-0 z-0">
+<img alt="Muscular man in fog" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkAwaOcsyjwoppKcuXoxQ4Mw1ugOEo_UrTcGXuNihOPfEfZOPDkswXPhTkxkeuwXBgDBIiVTDH5ay3708UULv6elWIzso2VRx9_yd9XbVvgD7XnWGrefD9OFC2lVYPY94fOnEh4RwjEdMLmHwe553em4iHB7KC3wyMHMmUrnrEAJ066Dh8waPM3P2OsGROiv3lBHBlt-i4fmXylHIY2Yoq4-Ew8AvtDycH2z0s4OptUwyqKhfRE_neyvQgmwr2B_3O4kqw_Iniy0Y-"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+<div class="fog-overlay"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
+<h1 class="font-display text-6xl md:text-9xl uppercase leading-none tracking-tighter italic animate-fade-in">
+        My Free <br/>
+<span class="text-brand">Message</span> <br/>
+        To You
+      </h1>
+<p class="mt-8 text-xl md:text-2xl font-light text-gray-300 max-w-2xl mx-auto italic uppercase tracking-widest">
+        The elite performance blueprint for the modern influencer.
+      </p>
+<div class="mt-10 flex flex-col md:flex-row gap-4 justify-center items-center">
+<a class="bg-brand text-black font-black px-10 py-4 text-lg uppercase rounded-none skew-x-[-12deg] hover:scale-110 transition-all neon-glow" href="#video">
+          Watch Now
+        </a>
+<div class="text-white font-bold uppercase tracking-tighter text-sm md:ml-4">
+          Scroll to ascend <span class="text-brand">↓</span>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Hero Section -->
+<!-- BEGIN: Kinetic Marquee -->
+<section class="bg-brand py-4 overflow-hidden border-y-4 border-black rotate-[-1deg] z-20 relative" data-purpose="kinetic-marquee">
+<div class="marquee-container">
+<div class="flex animate-marquee shrink-0 space-x-12 items-center">
+<span class="text-black font-display text-4xl font-black uppercase italic">NO EXCUSES</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+<span class="text-black font-display text-4xl font-black uppercase italic">ELITE PERFORMANCE</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+<span class="text-black font-display text-4xl font-black uppercase italic">PUSH THE LIMIT</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+<span class="text-black font-display text-4xl font-black uppercase italic">GRIT &amp; GLORY</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+</div>
+<div class="flex animate-marquee shrink-0 space-x-12 items-center">
+<span class="text-black font-display text-4xl font-black uppercase italic">NO EXCUSES</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+<span class="text-black font-display text-4xl font-black uppercase italic">ELITE PERFORMANCE</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+<span class="text-black font-display text-4xl font-black uppercase italic">PUSH THE LIMIT</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+<span class="text-black font-display text-4xl font-black uppercase italic">GRIT &amp; GLORY</span>
+<span class="text-black font-display text-4xl font-black uppercase italic opacity-30">•</span>
+</div>
+</div>
+</section>
+<!-- END: Kinetic Marquee -->
+<!-- BEGIN: Video Embed Section -->
+<section class="py-24 bg-grit relative" data-purpose="video-section" id="video">
+<div class="container mx-auto px-4">
+<div class="max-w-5xl mx-auto">
+<div class="mb-12 text-center">
+<h2 class="text-4xl md:text-6xl font-display uppercase italic mb-4">The Core Philosophy</h2>
+<div class="h-1 w-24 bg-brand mx-auto"></div>
+</div>
+<!-- Video Container -->
+<div class="relative group aspect-video bg-black rounded-xl overflow-hidden shadow-2xl shadow-brand/10 border-2 border-white/5">
+<div class="absolute inset-0 flex items-center justify-center z-10">
+<button class="bg-brand/90 hover:bg-brand text-black w-24 h-24 rounded-full flex items-center justify-center pl-2 transition-all transform group-hover:scale-110">
+<svg class="w-12 h-12" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"></path></svg>
+</button>
+</div>
+<img alt="Gym weights in fog" class="w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwHWq8A4Ybp2vmPO9W-Bzf9kNdpQa-gJFZ-o4RC3PI3cS2l3hKydl3cJC9dNjbbo9BvnNc7o8ThP8-NKm7nONO1rS-2u6lVI5bpiW0AeLvf1emKpeMrb3YyLKsRKlfEJhSDdOaLy9z6zU5roQp3XizKscfu7tKDto9hk16g23O8y1zgxnwYB479wpxt8P3J6FZEo9haW5BdqGsHb2Vd5qlUCEFeNcMpZDyo-TARs9gjKOZUKfAfweBDlOMqb79yI0_SLDDqao6Vz6C"/>
+<div class="absolute bottom-6 left-6 text-left">
+<p class="text-brand font-black uppercase tracking-widest text-sm">Now Playing</p>
+<h3 class="text-2xl font-bold uppercase italic">Breaking The Plateau (2024)</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Video Embed Section -->
+<!-- BEGIN: Motivation Broken Grid -->
+<section class="py-24 bg-black relative overflow-hidden" data-purpose="motivation-gallery" id="motivation">
+<!-- Atmospheric fog shapes -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-brand/5 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-brand/5 blur-[120px] rounded-full"></div>
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+<!-- Grid Item 1 -->
+<div class="md:col-span-7 group relative overflow-hidden rounded-lg aspect-[4/3] shadow-2xl" data-purpose="gallery-item-1">
+<img alt="Fitness influencer training" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE87zdnhQKksTEzHZbgmYYFg8Kk6zZLcplh2OzP9-jhUbmM53spn_Co2DmoNJHmCVG5Xg8Ufz3grtqOTxzZsViisR9AKsQCALPwPbrmZRYiyeh6CpK5ZNSjLER1P4nhKHjfomcUrB1blk-DRAKvjGzbSs3TU7cCSbg8V5VqRAiBQMgkaNdg3C2zeFguo5HhknfoHV-49LJiJ67glkGxv1nAb7pJgVNU-HPP9g9DAHbSQ09DzV2LxSKS78O9TUQhd_L32PGIHvv40dx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-8 left-8">
+<span class="bg-brand text-black px-3 py-1 text-xs font-black uppercase mb-2 inline-block">Focus</span>
+<h4 class="text-3xl font-display uppercase italic">The High Contrast Grind</h4>
+</div>
+</div>
+<!-- Grid Item 2 -->
+<div class="md:col-span-5 space-y-6">
+<div class="group relative overflow-hidden rounded-lg aspect-square shadow-xl" data-purpose="gallery-item-2">
+<img alt="Weights texture" class="w-full h-full object-cover transition-transform duration-700 group-hover:rotate-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3GWmX_n1f0M5nhcTkQGkoXSM0cZ3Tsna9WR42xMxTOvEpXEkyKzlUomH-MGqpS4KIBDNJiF8rSY1kuAAXfzDOsGXiJnY7sFNu5qllwETwdd1xh0n47FkS9R4Cmy1b86zaL7aj7gyCpC9_-vRFDhVrRu4Ko9tOMk28C4fxWMFUzB0MY55GA7yX4NpjXjP4_3z_s7nIEa-XXIJx7NHWnt_MSGqrsU4Rg2DhlAVwNNelE9vAwOySNWBo1o6QOFbqyrYupE3G7T2UD7kk"/>
+<div class="absolute inset-0 bg-brand/10 group-hover:bg-transparent transition-colors"></div>
+</div>
+<div class="p-8 border-l-4 border-brand bg-grit">
+<h3 class="text-4xl font-display uppercase italic mb-4 leading-tight">Beyond the Physical</h3>
+<p class="text-gray-400 font-medium italic">"It's not about the iron. It's about the resolve to pick it up when everything tells you to stay down."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Motivation Broken Grid -->
+<!-- BEGIN: Blog/Content Grid -->
+<section class="py-24 bg-grit" data-purpose="content-grid" id="blog">
+<div class="container mx-auto px-4 text-center mb-16">
+<h2 class="text-sm font-black text-brand uppercase tracking-[0.5em] mb-4">Elite Resources</h2>
+<h3 class="text-5xl md:text-7xl font-display uppercase italic">The Intel</h3>
+</div>
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="glass-card p-1 rounded-lg group hover:-translate-y-2 transition-all duration-300" data-purpose="blog-card">
+<div class="relative h-64 overflow-hidden rounded-t-lg">
+<img alt="Training hacks" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMOcMwL_dm0AMnrlWgWYMi6L7PJTbLcHK23LRYa4whG-A5OEnZuuppkgPDzGzTWgqNdNTGdlzBeSohOtVa3GUcJiKCm3vY4J8vlk8mqWoR9XscwUOKKRUNdBA7Jn_bRADIzgupR4xj7QvSK1WZfe9c5kNvYhKN0iKwSM4HT2zfIV78CjySLauhAQPV8tvz_-IAC1eLGP4_7XWslPfsxcJboOHCW5SMxWPoNWbJpFl_tPWr52TbJ8N8gWKS1fGlOAApoA68bgMa4JsM"/>
+<div class="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-4 py-1 border border-brand/50 text-brand text-[10px] font-bold uppercase tracking-widest">Technique</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-black uppercase italic mb-4 group-hover:text-brand transition-colors">Training Hacks</h4>
+<p class="text-gray-400 text-sm mb-6 leading-relaxed">Optimization strategies for maximum hypertrophy and CNS recovery. Scientifically backed, battle-tested.</p>
+<a class="inline-flex items-center text-xs font-black uppercase tracking-widest text-brand group-hover:gap-4 transition-all" href="#">Read Intel <svg class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="glass-card p-1 rounded-lg group hover:-translate-y-2 transition-all duration-300" data-purpose="blog-card">
+<div class="relative h-64 overflow-hidden rounded-t-lg">
+<img alt="Influencer insights" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCXsbvzscFg2_i8MrP4ztrBh7aBpR8w6wKcS1_DVmTSZYZKU9QBjehaB39xbIU0YoMIf3D00UmeLc4IOn_8rW-pO_1cqcMsS7KIT73erjrcObbQju9Vq8tNnIJ4sOmpI6sbxhtyDFdd4IiDjGSKFfeZwtbQ5XENlbt9iGwBig1rJJxMANUyxgdMfKH8rFanNOXYh802qBspyz4_0aNa-44bd732A_q_6f1ktn_k2j-wDD02WkSsa15QU1PqO3vg3mf7NVswLQ10guK"/>
+<div class="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-4 py-1 border border-brand/50 text-brand text-[10px] font-bold uppercase tracking-widest">Brand</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-black uppercase italic mb-4 group-hover:text-brand transition-colors">Influencer Insights</h4>
+<p class="text-gray-400 text-sm mb-6 leading-relaxed">The business of aesthetics. How to leverage high-performance visuals to scale your personal message.</p>
+<a class="inline-flex items-center text-xs font-black uppercase tracking-widest text-brand group-hover:gap-4 transition-all" href="#">Read Intel <svg class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="glass-card p-1 rounded-lg group hover:-translate-y-2 transition-all duration-300" data-purpose="blog-card">
+<div class="relative h-64 overflow-hidden rounded-t-lg">
+<div class="w-full h-full bg-black flex items-center justify-center p-12">
+<span class="text-stroke font-display text-8xl italic uppercase opacity-20 group-hover:opacity-40 transition-opacity">GRIT</span>
+</div>
+<div class="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-4 py-1 border border-brand/50 text-brand text-[10px] font-bold uppercase tracking-widest">Mindset</div>
+</div>
+<div class="p-8">
+<h4 class="text-2xl font-black uppercase italic mb-4 group-hover:text-brand transition-colors">Mental Grit</h4>
+<p class="text-gray-400 text-sm mb-6 leading-relaxed">Developing the psychological armor required to endure the fog of high-performance living.</p>
+<a class="inline-flex items-center text-xs font-black uppercase tracking-widest text-brand group-hover:gap-4 transition-all" href="#">Read Intel <svg class="h-4 w-4 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: Blog/Content Grid -->
+<!-- BEGIN: Footer -->
+<footer class="bg-black py-12 border-t border-white/5" data-purpose="main-footer">
+<div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-left">
+<div class="text-brand font-black text-3xl tracking-tighter italic mb-2">MFMTY.</div>
+<p class="text-gray-600 text-xs uppercase tracking-widest">© 2024 Performance Media Lab. All rights reserved.</p>
+</div>
+<div class="flex space-x-6">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-brand hover:text-brand transition-all" href="#">IG</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-brand hover:text-brand transition-all" href="#">YT</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:border-brand hover:text-brand transition-all" href="#">X</a>
+</div>
+<div class="text-right hidden md:block">
+<p class="text-gray-500 text-[10px] uppercase font-bold mb-1">Status</p>
+<div class="flex items-center text-green-500 gap-2">
+<span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+<span class="text-xs font-black tracking-widest uppercase">System Operational</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: Interaction Script -->
+<script data-purpose="scroll-animations">
+    // Simple reveal observer for aesthetic entrances
+    const observerOptions = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('[data-purpose="blog-card"], [data-purpose="gallery-item-1"]').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+  </script>
+<!-- END: Interaction Script -->
+</body></html>
